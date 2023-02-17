@@ -26,7 +26,8 @@ def update_parc(data,label_dict,parc_outpath):
 	new_data = data.get_fdata()
 	for i in range(len(unique_labels)):
 		new_data[np.where(new_data == unique_labels[i])] = unique_voxels[i]
-    out_data = nib.Nifti1Image(new_data,data.affine,data.header)
+	out_data = nib.Nifti1Image(new_data,data.affine,data.header)
+
 	output_parc_data(out_data,parc_outpath)
 
 def main():
@@ -48,12 +49,12 @@ def main():
 		parc_dir = ['./thal_parc/','./hippamyg_parc/']
 		parc_path = [parc_dir[0]+'/parc.nii.gz',parc_dir[1]+'/parc.nii.gz']
 		label_path = [parc_dir[0]+'/label.json',parc_dir[1]+'/label.json']
-	
+
 	for i in range(len(parc_path)):
 		data = load_parc_data(parc_path[i])
 		label = read_label_json(label_path[i])
 		outpath = parc_dir[i]
-		update_parc(data,label,outpath+'/parc2.nii.gz')
+		update_parc(data,label,outpath+'/parc.nii.gz')
 
 if __name__ == '__main__':
 	main()
