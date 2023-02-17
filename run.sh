@@ -35,7 +35,7 @@ else
 fi
 
 if [[ ${type} == "thal" ]]; then
-	[ ! -f ${thal_outdir}/parc.nii.gz ] && mri_convert ${freesurfer}/mri/${thal}.mgz ./thal.nii.gz && mri_vol2vol --mov ./thal.nii.gz --targ ${t1} --regheader --interp nearest --o ${thal_outdir}/parc.nii.gz --force
+	[ ! -f ${thal_outdir}/parc.nii.gz ] && mri_convert ${freesurfer}/mri/${thal}.mgz ./thal.nii.gz && mri_vol2vol --mov ./thal.nii.gz --targ ${t1} --regheader --interp nearest --o ${thal_outdir}/parc.nii.gz
 
 	[ ! -f ${thal_outdir}/label.json ] && cp ${thal_outjson} ${thal_outdir}/label.json
 
@@ -47,7 +47,7 @@ if [[ ${type} == "thal" ]]; then
 		exit 0
 	fi
 elif [[ ${type} == "hippamyg" ]]; then
-	[ ! -f ${hippamyg_outdir}/parc.nii.gz ] && mri_convert ${freesurfer}/mri/lh.${hipp_amyg}.mgz ./lh.hippamyg.nii.gz && mri_convert ${freesurfer}/mri/rh.${hipp_amyg}.mgz ./rh.hippamyg.nii.gz && fslmaths ./rh.hippamyg.nii.gz -add 100 ./rh.hippamyg.nii.gz && fslmaths ./rh.hippamyg.nii.gz -thr 200 ./rh.hippamyg.nii.gz && fslmaths ./lh.hippamyg.nii.gz -add rh.hippamyg.nii.gz ./hippamyg.nii.gz && mri_vol2vol --mov ./hippamyg.nii.gz --targ ${t1} --regheader --interp nearest --o ${hippamyg_outdir}/parc.nii.gz --force
+	[ ! -f ${hippamyg_outdir}/parc.nii.gz ] && mri_convert ${freesurfer}/mri/lh.${hipp_amyg}.mgz ./lh.hippamyg.nii.gz && mri_convert ${freesurfer}/mri/rh.${hipp_amyg}.mgz ./rh.hippamyg.nii.gz && fslmaths ./rh.hippamyg.nii.gz -add 100 ./rh.hippamyg.nii.gz && fslmaths ./rh.hippamyg.nii.gz -thr 200 ./rh.hippamyg.nii.gz && fslmaths ./lh.hippamyg.nii.gz -add rh.hippamyg.nii.gz ./hippamyg.nii.gz && mri_vol2vol --mov ./hippamyg.nii.gz --targ ${t1} --regheader --interp nearest --o ${hippamyg_outdir}/parc.nii.gz
 	
 	[ ! -f ${hippamyg_outdir}/label.json ] && cp ${hipp_outjson} ${hippamyg_outdir}/label.json
 
@@ -59,8 +59,8 @@ elif [[ ${type} == "hippamyg" ]]; then
 		exit 0
 	fi
 else
-	[ ! -f ${thal_outdir}/parc.nii.gz ] && mri_convert ${freesurfer}/mri/${thal}.mgz ./thal.nii.gz && mri_vol2vol --mov ./thal.nii.gz --targ ${t1} --regheader --interp nearest --o ${thal_outdir}/parc.nii.gz --force
-	[ ! -f ${hippamyg_outdir}/parc.nii.gz ] && mri_convert ${freesurfer}/mri/lh.${hipp_amyg}.mgz ./lh.hippamyg.nii.gz && mri_convert ${freesurfer}/mri/rh.${hipp_amyg}.mgz ./rh.hippamyg.nii.gz && fslmaths ./rh.hippamyg.nii.gz -add 100 ./rh.hippamyg.nii.gz && fslmaths ./rh.hippamyg.nii.gz -thr 200 ./rh.hippamyg.nii.gz && fslmaths ./lh.hippamyg.nii.gz -add rh.hippamyg.nii.gz ./hippamyg.nii.gz && mri_vol2vol --mov ./hippamyg.nii.gz --targ ${t1} --regheader --interp nearest --o ${hippamyg_outdir}/parc.nii.gz --force
+	[ ! -f ${thal_outdir}/parc.nii.gz ] && mri_convert ${freesurfer}/mri/${thal}.mgz ./thal.nii.gz && mri_vol2vol --mov ./thal.nii.gz --targ ${t1} --regheader --interp nearest --o ${thal_outdir}/parc.nii.gz
+	[ ! -f ${hippamyg_outdir}/parc.nii.gz ] && mri_convert ${freesurfer}/mri/lh.${hipp_amyg}.mgz ./lh.hippamyg.nii.gz && mri_convert ${freesurfer}/mri/rh.${hipp_amyg}.mgz ./rh.hippamyg.nii.gz && fslmaths ./rh.hippamyg.nii.gz -add 100 ./rh.hippamyg.nii.gz && fslmaths ./rh.hippamyg.nii.gz -thr 200 ./rh.hippamyg.nii.gz && fslmaths ./lh.hippamyg.nii.gz -add rh.hippamyg.nii.gz ./hippamyg.nii.gz && mri_vol2vol --mov ./hippamyg.nii.gz --targ ${t1} --regheader --interp nearest --o ${hippamyg_outdir}/parc.nii.gz
 
 	[ ! -f ${hippamyg_outdir}/label.json ] && cp ${hipp_outjson} ${hippamyg_outdir}/label.json
 	[ ! -f ${thal_outdir}/label.json ] && cp ${thal_outjson} ${thal_outdir}/label.json
