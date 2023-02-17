@@ -12,10 +12,15 @@ if [[ ${type} == "thal" ]]; then
 	thal_outjson="thal_label.json"
 	thal_outdir="thal_parc"
 elif [[ ${type} == "hippamyg" ]]; then
+	tmp=(`find ${freesurfer}/mri/lh.hippoAmygLabels-T1.v*.mgz`)
+	tmp2=`echo ${tmp%%.FSvoxelSpace.mgz}`
 	if [[ ${subdivision} == "default" ]]; then
-		hipp_amyg="hippoAmygLabels-T1.v*.FSvoxelSpace"
+		fs_vs=`echo ${tmp2##*.}`
+		hipp_amyg="hippoAmygLabels-T1.${fs_vs}.FSvoxelSpace"
 	else
-		hipp_amyg="hippoAmygLabels-T1.v*.${subdivision}.FSvoxelSpace"
+		tmp3=`echo ${tmp2%.*}`
+		fs_vs=`echo ${tmp3##*.}`
+		hipp_amyg="hippoAmygLabels-T1.${fs_vs}.${subdivision}.FSvoxelSpace"
 	fi
 	hippamyg_outdir="hippamyg_parc"
 	hippamyg_outjson="hippamyg_label.json"
