@@ -94,105 +94,120 @@
 		"r": 185,
 		"g": 185,
 		"b": 239
-	},	{
+	},	
+	{
 		"name": "lh.HP_head",
 		"label": "232",
 		"voxel_value": 232,
 		"r": 184,
 		"g": 184,
 		"b": 240
-	},	{
+	},	
+	{
 		"name": "lh.presubiculum-head",
 		"label": "233",
 		"voxel_value": 233,
 		"r": 183,
 		"g": 183,
 		"b": 241
-	},	{
+	},	
+	{
 		"name": "lh.presubiculum-body",
 		"label": "234",
 		"voxel_value": 234,
 		"r": 182,
 		"g": 182,
 		"b": 242
-	},	{
+	},	
+	{
 		"name": "lh.subiculum-head",
 		"label": "235",
 		"voxel_value": 235,
 		"r": 181,
 		"g": 181,
 		"b": 243
-	},	{
+	},	
+	{
 		"name": "lh.subiculum-body",
 		"label": "236",
 		"voxel_value": 236,
 		"r": 180,
 		"g": 180,
 		"b": 244
-	},	{
+	},	
+	{
 		"name": "lh.CA1-head",
 		"label": "237",
 		"voxel_value": 237,
 		"r": 179,
 		"g": 179,
 		"b": 245
-	},	{
+	},	
+	{
 		"name": "lh.CA1-body",
 		"label": "238",
 		"voxel_value": 238,
 		"r": 178,
 		"g": 178,
 		"b": 246
-	},	{
+	},	
+	{
 		"name": "lh.CA3-head",
 		"label": "239",
 		"voxel_value": 239,
 		"r": 178,
 		"g": 178,
 		"b": 247
-	},	{
+	},	
+	{
 		"name": "lh.CA3-body",
 		"label": "240",
 		"voxel_value": 240,
 		"r": 177,
 		"g": 177,
 		"b": 248
-	},	{
+	},	
+	{
 		"name": "lh.CA4-head",
 		"label": "241",
 		"voxel_value": 241,
 		"r": 176,
 		"g": 176,
 		"b": 249
-	},	{
+	},	
+	{
 		"name": "lh.CA4-body",
 		"label": "242",
 		"voxel_value": 242,
 		"r": 175,
 		"g": 175,
 		"b": 250
-	},	{
+	},	
+	{
 		"name": "lh.GC-ML-DG-head",
 		"label": "243",
 		"voxel_value": 243,
 		"r": 174,
 		"g": 174,
 		"b": 251
-	},	{
+	},	
+	{
 		"name": "lh.GC-ML-DG-body",
 		"label": "244",
 		"voxel_value": 244,
 		"r": 173,
 		"g": 173,
 		"b": 252
-	},	{
+	},	
+	{
 		"name": "lh.molecular_layer_HP-head",
 		"label": "245",
 		"voxel_value": 245,
 		"r": 172,
 		"g": 172,
 		"b": 253
-	},	{
+	},	
+	{
 		"name": "lh.molecular_layer_HP-body",
 		"label": "246",
 		"voxel_value": 246,
@@ -264,11 +279,6 @@
 		"g": 250,
 		"b": 0
 	},
-
-
-
-
-
 	{
 		"name": "lh.Fusion-amygdala-HP-FAH",
 		"label": "7011",
@@ -349,12 +359,6 @@
 		"g": 250,
 		"b": 0
 	},
-
-
-
-
-
-
 	{
 		"name": "rh.parasubiculum",
 		"label": "303",
@@ -450,56 +454,64 @@
 		"r": 185,
 		"g": 185,
 		"b": 239
-	},	{
+	},	
+	{
 		"name": "rh.HP_head",
 		"label": "332",
 		"voxel_value": 332,
 		"r": 184,
 		"g": 184,
 		"b": 240
-	},	{
+	},	
+	{
 		"name": "rh.presubiculum-head",
 		"label": "333",
 		"voxel_value": 333,
 		"r": 183,
 		"g": 183,
 		"b": 241
-	},	{
+	},	
+	{
 		"name": "rh.presubiculum-body",
 		"label": "334",
 		"voxel_value": 334,
 		"r": 182,
 		"g": 182,
 		"b": 242
-	},	{
+	},	
+	{
 		"name": "rh.subiculum-head",
 		"label": "335",
 		"voxel_value": 335,
 		"r": 181,
 		"g": 181,
 		"b": 243
-	},	{
+	},	
+	{
 		"name": "rh.subiculum-body",
 		"label": "336",
 		"voxel_value": 336,
 		"r": 180,
 		"g": 180,
 		"b": 244
-	},	{
+	},	
+	{
 		"name": "rh.CA1-head",
 		"label": "337",
 		"voxel_value": 337,
 		"r": 179,
 		"g": 179,
 		"b": 245
-	},	{
+	},	
+	{
 		"name": "rh.CA1-body",
 		"label": "338",
 		"voxel_value": 338,
 		"r": 178,
 		"g": 178,
 		"b": 246
-	},	{
+	},	
+	{
 		"name": "rh.CA3-head",
 		"label": "339",
 		"voxel_value": 339,
@@ -513,14 +525,16 @@
 		"r": 177,
 		"g": 177,
 		"b": 248
-	},	{
+	},	
+	{
 		"name": "rh.CA4-head",
 		"label": "341",
 		"voxel_value": 341,
 		"r": 176,
 		"g": 176,
 		"b": 249
-	},	{
+	},	
+	{
 		"name": "rh.CA4-body",
 		"label": "342",
 		"voxel_value": 342,
@@ -534,21 +548,24 @@
 		"r": 174,
 		"g": 174,
 		"b": 251
-	},	{
+	},	
+	{
 		"name": "rh.GC-ML-DG-body",
 		"label": "344",
 		"voxel_value": 344,
 		"r": 173,
 		"g": 173,
 		"b": 252
-	},	{
+	},	
+	{
 		"name": "rh.molecular_layer_HP-head",
 		"label": "345",
 		"voxel_value": 345,
 		"r": 172,
 		"g": 172,
 		"b": 253
-	},	{
+	},	
+	{
 		"name": "rh.molecular_layer_HP-body",
 		"label": "346",
 		"voxel_value": 346,
