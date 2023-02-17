@@ -12,42 +12,19 @@ def read_label_json(label_path):
 
 	with open(label_path,'r') as lf:
 		label = json.load(lf)
-
 	return label
 
 def output_parc_data(parc,outpath):
 
 	nib.save(parc,outpath)
 
-def output_label_json(labels,outpath):
-
-	with open(outpath,'w') as lf:
-		json.dump(labels,outpath)
-
-def identify_unique_labels(data,label_dict):
-
-	unique_labels = np.unique(data[data > 0])
-	return [ f for f in label_dict if f['voxel_value'] in unique_labels ]
-
-def update_label(data,label_dict,outpath):
-
-	labels = identify_unique_labels(data,label_dict)
+def update_parc(data,label_dict,parc_outpath)
 	
-	for i in range(len(labels)):
-		labels[i]['voxel_value'] = i+1
-
-	output_label_json(labels,outpath)
-
-	return labels
-
-def update_parc(data,label_dict,label_outpath,parc_outpath)
-	
-	labels = update_label(data,label_dict,label_outpath)
-	unique_voxels = [ f['voxel_value'] for f in labels ]
-	unique_labels = [ int(f['label']) for f in labels]
+	unique_voxels = [ f['voxel_value'] for f in label_dict ]
+	unique_labels = [ f['label'] for f in label_dict ]
 	
 	for i in range(len(unique_labels)):
-		data[np.where(data == unique_labels[i])] = unique_voxels[i]
+		data.get_fdata()[np.where(data.get_fdata() == unique_labels[i])] = unique_voxels[i]
 
 	output_parc_data(data,parc_outpath)
 
@@ -56,13 +33,13 @@ def main():
 	with open('config.json','r') as config_f:
 		config = json.load(config_f)
 
-	parc_type = config['type']
+	dtype = config['type']
 
-	if type == "thal":
+	if dtype == "thal":
 		parc_dir = ['./thal_parc/']
 		parc_path = [parc_dir[0]+'/parc.nii.gz']
 		label_path = [parc_dir[0]+'/label.json']
-	elif type == "hippamyg":
+	elif dtype == "hippamyg":
 		parc_dir = ['./hippamyg_parc/']
 		parc_path = [parc_dir[0]+'/parc.nii.gz']
 		label_path = [parc_dir[0]+'/label.json']
@@ -72,7 +49,7 @@ def main():
 		label_path = [parc_dir[0]+'/label.json',parc_dir[1]+'/label.json']
 	
 	for i in range(len(parc_path)):
-		data = load_parc_data(parc_path[i])
+		image = load_parc_data(parc_path[i])
 		label = read_label_json(label_path[i])
 		outpath = parc_dir[i]
-		update_parc(data,label,outpath+'/label.json',outpath+'/parc.nii.gz')
+		update_parc(data,label,outpath+'/parc.nii.gz')
