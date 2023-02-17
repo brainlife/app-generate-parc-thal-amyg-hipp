@@ -30,11 +30,15 @@ else
 	hippamyg_outjson="hippamyg_label.json"
 
 	thal="ThalamicNuclei.v*.T1.FSvoxelSpace"
-
+	
+	tmp=(`find ${freesurfer}/mri/lh.hippoAmygLabels-T1.v*.CA.FSvoxelSpace.mgz`)
+	tmp=`echo ${tmp%%.FSvoxelSpace.mgz}`
+	tmp=`echo ${tmp%.*}`
+	fs_vs=`echo ${tmp##*.}`
 	if [[ ${subdivision} == "default" ]]; then
-		hipp_amyg="hippoAmygLabels-T1.v*.FSvoxelSpace"
+		hipp_amyg="hippoAmygLabels-T1.${fs_vs}.FSvoxelSpace"
 	else
-		hipp_amyg="hippoAmygLabels-T1.v*.${subdivision}.FSvoxelSpace"
+		hipp_amyg="hippoAmygLabels-T1.${fs_vs}.${subdivision}.FSvoxelSpace"
 	fi
 fi
 
