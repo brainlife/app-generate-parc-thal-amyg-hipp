@@ -49,7 +49,7 @@ def main():
 		label_path = [parc_dir[0]+'/label.json',parc_dir[1]+'/label.json']
 	
 	for i in range(len(parc_path)):
-		image = load_parc_data(parc_path[i])
+		data = load_parc_data(parc_path[i])
 		label = read_label_json(label_path[i])
 		outpath = parc_dir[i]
 		update_parc(data,label,outpath+'/parc.nii.gz')
