@@ -18,7 +18,7 @@ def output_parc_data(parc,outpath):
 
 	nib.save(parc,outpath)
 
-def update_parc(data,label_dict,parc_outpath)
+def update_parc(data,label_dict,parc_outpath):
 	
 	unique_voxels = [ f['voxel_value'] for f in label_dict ]
 	unique_labels = [ f['label'] for f in label_dict ]
