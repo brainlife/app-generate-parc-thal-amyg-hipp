@@ -23,10 +23,10 @@ def update_parc(data,label_dict,parc_outpath):
 	unique_voxels = [ f['voxel_value'] for f in label_dict ]
 	unique_labels = [ f['label'] for f in label_dict ]
 
-        new_data = data.get_fdata()
+	new_data = data.get_fdata()
 	for i in range(len(unique_labels)):
 		new_data[np.where(new_data == unique_labels[i])] = unique_voxels[i]
-        out_data = nib.Nifti1Image(new_data,data.affine,data.header)
+    out_data = nib.Nifti1Image(new_data,data.affine,data.header)
 	output_parc_data(out_data,parc_outpath)
 
 def main():
