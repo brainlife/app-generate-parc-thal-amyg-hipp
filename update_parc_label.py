@@ -53,3 +53,6 @@ def main():
 		label = read_label_json(label_path[i])
 		outpath = parc_dir[i]
 		update_parc(data,label,outpath+'/parc.nii.gz')
+
+if __name__ == '__main__':
+	main()
