@@ -5,21 +5,23 @@ t1=`jq -r '.t1' config.json`
 subdivision=`jq -r '.subdivision' config.json`
 type=`jq -r '.type' config.json`
 
+[ ! -d freesurfer ] && cp -R ${freesurfer} ./freesurfer && freesurfer="./freesurfer"
+
 if [[ ${type} == "thal" ]]; then
 	thal="ThalamicNuclei.v*.T1.FSvoxelSpace"
 	thal_outjson="thal_label.json"
-	thal_outdir="thal_outdir"
+	thal_outdir="thal_parc"
 elif [[ ${type} == "hippamyg" ]]; then
 	if [[ ${subdivision} == "default" ]]; then
 		hipp_amyg="hippoAmygLabels-T1.v*.FSvoxelSpace"
 	else
 		hipp_amyg="hippoAmygLabels-T1.v*.${subdivision}.FSvoxelSpace"
 	fi
-	hippamyg_outdir="hippamyg_outdir"
+	hippamyg_outdir="hippamyg_parc"
 	hippamyg_outjson="hippamyg_label.json"
 else
-	thal_outdir="thal_outdir"
-	hippamyg_outdir="hippamyg_outdir"
+	thal_outdir="thal_parc"
+	hippamyg_outdir="hippamyg_parc"
 	thal_outjson="thal_label.json"
 	hippamyg_outjson="hippamyg_label.json"
 
