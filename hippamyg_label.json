@@ -1,0 +1,62 @@
+[
+	{
+		"name": "parasubiculum", "label": "203", "voxel_value": 203, "r": 255, "g": 255, "b": 0
+	},
+	{
+		"name": "presubiculum", "label": "204", "voxel_value": 204, "r": 64, "g": 0, "b": 64
+	},
+	{
+		"name": "subiculum", "label": "205", "voxel_value": 205, "r": 0, "g": 0, "b": 255
+	},
+	{
+		"name": "CA1", "label": "206", "voxel_value": 206, "r": 255, "g": 0, "b": 0
+	},
+	{
+		"name": "CA3", "label": "208", "voxel_value": 208, "r": 0, "g": 128, "b": 0
+	},
+	{
+		"name": "CA4", "label": "209", "voxel_value": 209, "r": 196, "g": 160, "b": 128
+	},
+	{
+		"name": "GC-DG", "label": "210", "voxel_value": 210, "r": 32, "g": 200, "b": 255
+	},
+	{
+		"name": "HATA", "label": "211", "voxel_value": 211, "r": 128, "g": 255, "b": 128
+	},
+	{
+		"name": "fimbria", "label": "212", "voxel_value": 212, "r": 204, "g": 153, "b": 204
+	},
+	{
+		"name": "hippocampal_fissure", "label": "215", "voxel_value": 215, "r": 128, "g": 32, "b": 255
+	},
+	{
+		"name": "HP_tail", "label": "226", "voxel_value": 226, "r": 170, "g": 170, "b": 255
+	},
+	{
+		"name": "Lateral-nucleus", "label": "7001", "voxel_value": 7001, "r": 72, "g": 132, "b": 181
+	},
+	{
+		"name": "Basal-nucleus", "label": "7003", "voxel_value": 7003, "r": 207, "g": 63, "b": 79
+	},
+	{
+		"name": "Central-nucleus", "label": "7005", "voxel_value": 7005, "r": 197, "g": 60, "b": 248
+	},
+	{
+		"name": "Medial-nucleus", "label": "7006", "voxel_value": 7006, "r": 2, "g": 149, "b": 2
+	},
+	{
+		"name": "Cortical-nucleus", "label": "7007", "voxel_value": 7007, "r": 221, "g": 249, "b": 166
+	},
+	{
+		"name": "Accessory-Basal-nucleus", "label": "7008", "voxel_value": 7008, "r": 232, "g": 146, "b": 35
+	},
+	{
+		"name": "Corticoamygdaloid-transitio", "label": "7009", "voxel_value": 7009, "r": 20, "g": 60, "b": 120
+	},
+	{
+		"name": "Anterior-amygdaloid-area-AAA", "label": "7010", "voxel_value": 7010, "r": 250, "g": 250, "b": 0
+	},
+	{
+		"name": "Paralaminar-nucleus", "label": "7015", "voxel_value": 7015, "r": 45, "g": 205, "b": 165
+	},
+]

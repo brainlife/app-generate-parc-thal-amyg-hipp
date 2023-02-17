@@ -1,0 +1,226 @@
+[
+    {
+        "name": "lh.Thalamus-Anterior",
+        "label": 8101, 
+        "voxel_value": 8101, 
+        "r": 74, 
+        "g": 130, 
+        "b": 181
+    },
+    {
+        "name": "lh.Thalamus-Ventral-anterior", 
+        "label": 8102, 
+        "voxel_value": 8102, 
+        "r": 242, 
+        "g": 241, 
+        "b": 240
+    },
+    {
+        "name": "lh.Thalamus-Lateral-dorsal", 
+        "label": 8103, 
+        "voxel_value": 8103, 
+        "r": 206, 
+        "g": 65, 
+        "b": 78
+    },
+    {
+        "name": "lh.Thalamus-Lateral-posterior", 
+        "label": 8104, 
+        "voxel_value": 8104, 
+        "r": 120, 
+        "g": 21, 
+        "b": 133
+    },
+    {
+        "name": "lh.Thalamus-Ventral-lateral", 
+        "label": 8105, 
+        "voxel_value": 8105, 
+        "r": 195, 
+        "g": 61, 
+        "b": 246
+    },
+    {
+        "name": "lh.Thalamus-Ventral-posterior-medial", 
+        "label": 8106, 
+        "voxel_value": 8106, 
+        "r": 3, 
+        "g": 147, 
+        "b": 6
+    },
+    {
+        "name": "lh.Thalamus-Ventral-posterior-lateral", 
+        "label": 8107, 
+        "voxel_value": 8107, 
+        "r": 220, 
+        "g": 251, 
+        "b": 163
+    },
+    {
+        "name": "lh.Thalamus-intralaminar", 
+        "label": 8108, 
+        "voxel_value": 8108, 
+        "r": 232, 
+        "g": 146, 
+        "b": 33
+    }    ,
+    {
+        "name": "lh.Thalamus-centromedian", 
+        "label": 8109, 
+        "voxel_value": 8109, 
+        "r": 4, 
+        "g": 114, 
+        "b": 14
+    },
+    {
+        "name": "lh.Thalamus-mediodorsal", 
+        "label": 8110, 
+        "voxel_value": 8110, 
+        "r": 121, 
+        "g": 184, 
+        "b": 220
+    },
+    {
+        "name": "lh.Thalamus-medial", 
+        "label": 8111, 
+        "voxel_value": 8111, 
+        "r": 235, 
+        "g": 11, 
+        "b": 175
+    },
+    {
+        "name": "lh.Thalamus-pulvinar", 
+        "label": 8112, 
+        "voxel_value": 8112, 
+        "r": 12, 
+        "g": 46, 
+        "b": 250
+    },
+    {
+        "name": "lh.Thalamus-lateral-geniculate", 
+        "label": 8113, 
+        "voxel_value": 8113, 
+        "r": 203, 
+        "g": 182, 
+        "b": 143
+    },
+    {
+        "name": "lh.Thalamus-medial-geniculate", 
+        "label": 8114, 
+        "voxel_value": 8114, 
+        "r": 42, 
+        "g": 204, 
+        "b": 167
+    },
+    {
+        "name": "rh.Thalamus-Anterior", 
+        "label": 8201, 
+        "voxel_value": 8201, 
+        "r": 74, 
+        "g": 130, 
+        "b": 181
+    },
+    {
+        "name": "rh.Thalamus-Ventral-anterior", 
+        "label": 8202, 
+        "voxel_value": 8202, 
+        "r": 242, 
+        "g": 241, 
+        "b": 240
+    },
+    {
+        "name": "rh.Thalamus-Lateral-dorsal", 
+        "label": 8203, 
+        "voxel_value": 8203, 
+        "r": 206, 
+        "g": 65, 
+        "b": 78
+    },
+    {
+        "name": "rh.Thalamus-Lateral-posterior", 
+        "label": 8204, 
+        "voxel_value": 8204, 
+        "r": 120, 
+        "g": 21, 
+        "b": 133
+    },
+    {
+        "name": "rh.Thalamus-Ventral-lateral", 
+        "label": 8205, 
+        "voxel_value": 8205, 
+        "r": 195, 
+        "g": 61, 
+        "b": 246
+    },
+    {
+        "name": "rh.Thalamus-Ventral-posterior-medial", 
+        "label": 8206, 
+        "voxel_value": 8206, 
+        "r": 3, 
+        "g": 147, 
+        "b": 6
+    },
+    {
+        "name": "rh.Thalamus-Ventral-posterior-lateral", 
+        "label": 8207, 
+        "voxel_value": 8207, 
+        "r": 220, 
+        "g": 251, 
+        "b": 163
+    },
+    {
+        "name": "rh.Thalamus-intralaminar", 
+        "label": 8208, 
+        "voxel_value": 8208, 
+        "r": 232, 
+        "g": 146, 
+        "b": 33
+    },
+    {
+        "name": "rh.Thalamus-centromedian", 
+        "label": 8209, 
+        "voxel_value": 8209, 
+        "r": 4, 
+        "g": 114, 
+        "b": 14
+    },
+    {
+        "name": "rh.Thalamus-mediodorsal", 
+        "label": 8210, 
+        "voxel_value": 8210, 
+        "r": 121, 
+        "g": 184, 
+        "b": 220
+    },
+    {
+        "name": "rh.Thalamus-medial", 
+        "label": 8211, 
+        "voxel_value": 8211, 
+        "r": 235, 
+        "g": 11, 
+        "b": 175
+    },
+    {
+        "name": "rh.Thalamus-pulvinar", 
+        "label": 8212, 
+        "voxel_value": 8212, 
+        "r": 12, 
+        "g": 46, 
+        "b": 250
+    },
+    {
+        "name": "rh.Thalamus-lateral-geniculate", 
+        "label": 8213, 
+        "voxel_value": 8213, 
+        "r": 203, 
+        "g": 182, 
+        "b": 143
+    },
+    {
+        "name": "rh.Thalamus-medial-geniculate", 
+        "label": 8214, 
+        "voxel_value": 8214, 
+        "r": 42, 
+        "g": 204, 
+        "b": 167
+    }
+]
