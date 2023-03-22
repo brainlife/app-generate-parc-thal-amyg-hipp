@@ -17,9 +17,9 @@ elif [[ ${type} == "hippamyg" ]]; then
 	tmp=`echo ${tmp%.*}`
 	fs_vs=`echo ${tmp##*.}`
 	if [[ ${subdivision} == "default" ]]; then
-		hipp_amyg="hippoAmygLabels-T1.${fs_vs}.FSvoxelSpace"
+		hipp_amyg="hippoAmygLabels-T1*.${fs_vs}.FSvoxelSpace"
 	else
-		hipp_amyg="hippoAmygLabels-T1.${fs_vs}.${subdivision}.FSvoxelSpace"
+		hipp_amyg="hippoAmygLabels-T1*.${fs_vs}.${subdivision}.FSvoxelSpace"
 	fi
 	hippamyg_outdir="hippamyg_parc"
 	hippamyg_outjson="hippamyg_label.json"
@@ -31,14 +31,14 @@ else
 
 	thal="ThalamicNuclei.v*.T1.FSvoxelSpace"
 	
-	tmp=(`find ${freesurfer}/mri/lh.hippoAmygLabels-T1.v*.CA.FSvoxelSpace.mgz`)
+	tmp=(`find ${freesurfer}/mri/lh.hippoAmygLabels-T1*.v*.CA.FSvoxelSpace.mgz`)
 	tmp=`echo ${tmp%%.FSvoxelSpace.mgz}`
 	tmp=`echo ${tmp%.*}`
 	fs_vs=`echo ${tmp##*.}`
 	if [[ ${subdivision} == "default" ]]; then
-		hipp_amyg="hippoAmygLabels-T1.${fs_vs}.FSvoxelSpace"
+		hipp_amyg="hippoAmygLabels-T1*.${fs_vs}.FSvoxelSpace"
 	else
-		hipp_amyg="hippoAmygLabels-T1.${fs_vs}.${subdivision}.FSvoxelSpace"
+		hipp_amyg="hippoAmygLabels-T1*.${fs_vs}.${subdivision}.FSvoxelSpace"
 	fi
 fi
 
