@@ -12,7 +12,7 @@ if [[ ${type} == "thal" ]]; then
 	thal_outjson="thal_label.json"
 	thal_outdir="thal_parc"
 elif [[ ${type} == "hippamyg" ]]; then
-	tmp=(`find ${freesurfer}/mri/lh.hippoAmygLabels-T1.v*.CA.FSvoxelSpace.mgz`)
+	tmp=(`find ${freesurfer}/mri/lh.hippoAmygLabels-T1*.v*.CA.FSvoxelSpace.mgz`)
 	tmp=`echo ${tmp%%.FSvoxelSpace.mgz}`
 	tmp=`echo ${tmp%.*}`
 	fs_vs=`echo ${tmp##*.}`
